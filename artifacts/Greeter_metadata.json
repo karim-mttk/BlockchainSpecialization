@@ -1,0 +1,86 @@
+{
+	"compiler": {
+		"version": "0.5.9+commit.c68bc34e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "hello",
+				"outputs": [
+					{
+						"name": "",
+						"type": "string"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "name",
+						"type": "string"
+					}
+				],
+				"name": "set",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "yourName",
+				"outputs": [
+					{
+						"name": "",
+						"type": "string"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Greeter.sol": "Greeter"
+		},
+		"evmVersion": "petersburg",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Greeter.sol": {
+			"keccak256": "0x8bff3ae5d7fdce732333228e8df1f2043d8abe98e7c48f3a0cb11ac88202cd8a",
+			"urls": [
+				"bzzr://96b9bdd125e08e2df889d4441405ac180b6dcc5b5ef099c7e71cb65d2df2178f",
+				"dweb:/ipfs/QmTYQBBSq9Th6Ncugr4LfarrD4uK25qFjZ7HftRAxCk9Pa"
+			]
+		}
+	},
+	"version": 1
+}
