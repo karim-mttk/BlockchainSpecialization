@@ -3,6 +3,7 @@ pragma solidity ^0.5.9;
 contract Coin {
     // The keyword "public" makes those variables
     // readable from outside.
+    //NOTE: after deploying the contract make sure to be on the right address while sending and minting. 
     address public minter;
     mapping (address => uint) public balances;
 

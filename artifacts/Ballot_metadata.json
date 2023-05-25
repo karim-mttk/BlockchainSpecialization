@@ -1,0 +1,99 @@
+{
+	"compiler": {
+		"version": "0.5.9+commit.c68bc34e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "toVoter",
+						"type": "address"
+					}
+				],
+				"name": "register",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "winningProposal",
+				"outputs": [
+					{
+						"name": "_winningProposal",
+						"type": "uint8"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "toProposal",
+						"type": "uint8"
+					}
+				],
+				"name": "vote",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"name": "_numProposals",
+						"type": "uint8"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {
+				"constructor": "Create a new ballot with $(_numProposals) different proposals.",
+				"register(address)": {
+					"notice": "Give $(toVoter) the right to vote on this ballot. May only be called by $(chairperson)."
+				},
+				"vote(uint8)": {
+					"notice": "Give a single vote to proposal $(toProposal)."
+				}
+			}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"BallotBasic.sol": "Ballot"
+		},
+		"evmVersion": "petersburg",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"BallotBasic.sol": {
+			"keccak256": "0xc814e16e57ffb9e8eb0caa0bf7b7e3be64eaf73c44498b6d61d2d2bdf311de70",
+			"urls": [
+				"bzzr://a7f33d6fce1d57fbaa596af21b14454118ae3b50a474e20644f83ff15e95e089",
+				"dweb:/ipfs/QmW3E5wZ8QFCPVVzCohVkEMNuLcwG9qGPjCwiJLgn6WXaq"
+			]
+		}
+	},
+	"version": 1
+}

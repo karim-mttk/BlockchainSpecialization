@@ -18,7 +18,7 @@ contract StateTransV2 {
     //1 minutes is set to illustrate the working 
     function advanceState () public  {
         timeNow = now;
-        if (timeNow > (startTime + 1 minutes)) {
+        if (timeNow > (startTime + 10 seconds)) {
         startTime = timeNow;  
         if (stage == Stage.Init) {stage = Stage.Reg; return;}
         if (stage == Stage.Reg) {stage = Stage.Vote; return;}
