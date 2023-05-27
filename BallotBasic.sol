@@ -10,6 +10,9 @@ contract Ballot {
     struct Proposal {
         uint voteCount; // could add other data about proposal
     }
+    //enum Stage
+    enum Stage {Init, Reg, Vote, Done}
+    Stage public stage - Stage.Init;
 
     address chairperson;
     mapping(address => Voter) voters;

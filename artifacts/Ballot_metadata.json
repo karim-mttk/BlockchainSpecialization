@@ -48,6 +48,20 @@
 				"type": "function"
 			},
 			{
+				"constant": true,
+				"inputs": [],
+				"name": "stage",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"name": "_numProposals",
@@ -57,6 +71,12 @@
 				"payable": false,
 				"stateMutability": "nonpayable",
 				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [],
+				"name": "votingCompleted",
+				"type": "event"
 			}
 		],
 		"devdoc": {
@@ -76,7 +96,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"BallotBasic.sol": "Ballot"
+			"BallotWithModifier.sol": "Ballot"
 		},
 		"evmVersion": "petersburg",
 		"libraries": {},
@@ -87,11 +107,11 @@
 		"remappings": []
 	},
 	"sources": {
-		"BallotBasic.sol": {
-			"keccak256": "0xc814e16e57ffb9e8eb0caa0bf7b7e3be64eaf73c44498b6d61d2d2bdf311de70",
+		"BallotWithModifier.sol": {
+			"keccak256": "0x9370083ba6e7a213a07d145ac0188de77be7404627e613c1a906c3eba90dcfc0",
 			"urls": [
-				"bzzr://a7f33d6fce1d57fbaa596af21b14454118ae3b50a474e20644f83ff15e95e089",
-				"dweb:/ipfs/QmW3E5wZ8QFCPVVzCohVkEMNuLcwG9qGPjCwiJLgn6WXaq"
+				"bzzr://644e91cd00702d6514edee8ef5514207b71bc338bc35591f9f330bb66f840728",
+				"dweb:/ipfs/QmdqvuQqs7DKUivbiMMUPf56z5u9NAZfQmiKwJ79orRbLF"
 			]
 		}
 	},
